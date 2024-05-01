@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS Home page Frontend Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="body">
+    <div class="toggleMenuItems">
+        <div class="closeIcon" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <nav>
+            <div class="logo">
+                <h1>W.</h1>
+            </div>
+            <div class="menus">
+                <ul>
+                    <li>Home</li>
+                    <li>New</li>
+                    <li>Popular</li>
+                    <li>Trending</li>
+                    <li>Categories</li>
+                </ul>
+            </div>
+            <div class="menuIcon" onclick="handleClick()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div class="middle">
+            <div class="left">
+                <div class="heroImage">
+                    <img src="/images/heroImage.png" alt="The Web3.0">
+                </div>
+                <div class="herocontent">
+                    <div class="childLeft">
+                        <h1>The Bright Future of Web 3.0 ?</h1>
+                    </div>
+                    <div class="childRight">
+                        <div class="top">
+                            <p>We dive into the next evolution of the web that climbs to put the power of the platforms back into the hands of the people. But it is really fulfilling its promise?</p>
+                        </div>
+                        <div class="actionbtn">
+                            <button type="submit">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="heroHeading">
+                    <h2>New</h2>
+                </div>
+                <div class="boxes">
+                    <div class="rightBox1">
+                        <div class="boxHeading">
+                            <h4>Hydrogen vs Electric Cars</h4>
+                        </div>
+                        <div class="boxContent">
+                            <p>Will hydrogen-fueled ever catch up to EVs?</p>
+                        </div>
+                    </div>
+                    <div class="rightBox1">
+                        <div class="boxHeading">
+                            <h4>The downsides of AI Artristry?</h4>
+                        </div>
+                        <div class="boxContent">
+                            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                        </div>
+                    </div>
+                    <div class="rightBox1">
+                        <div class="boxHeading">
+                            <h4>Is VC Funding Drying Up?</h4>
+                        </div>
+                        <div class="boxContent">
+                            <p>Private funding on VC firms is down 50% YOY. We take a look at what that means.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div id="box1">
+                <div class="boxImage">
+                    <img src="/images/retropc.jpg" alt="Reviving Retro PC">
+                </div>
+                <div class="boxDetails">
+                    <div class="boxHeading">
+                        <h3>01</h3>
+                    </div>
+                    <div class="boxContent">
+                        <h5>Reviving Retro PCs</h5>
+                        <p>What happens when old PCs are given modern upgrads?</p>
+                    </div>
+                </div>
+            </div>
+            <div id="box2">
+                <div class="boxImage">
+                    <img src="/images/2ndboxImage.png" alt="Reviving Retro PC">
+                </div>
+                <div class="boxDetails">
+                    <div class="boxHeading">
+                        <h3>02</h3>
+                    </div>
+                    <div class="boxContent">
+                        <h5>Top 10 Laptops of 2022</h5>
+                        <p>Our best picks for various needs and budgets.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="box3">
+                <div class="boxImage">
+                    <img src="/images/3rdboxImage.png" alt="Reviving Retro PC">
+                </div>
+                <div class="boxDetails">
+                    <div class="boxHeading">
+                        <h3>03</h3>
+                    </div>
+                    <div class="boxContent">
+                        <h5>The growing of Gaming</h5>
+                        <p>How the pandamic sparked fresh opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS for toggling the menu -->
+    <script type="text/javascript">
+        function handleClick(){
+            const wrapper = document.querySelector(".wrapper");
+            wrapper.style.display = "none";
+            const toggleMenuItems = document.querySelector(".toggleMenuItems");
+            toggleMenuItems.style.display = "block";
+        }
+        function closeMenu(){
+            const wrapper = document.querySelector(".wrapper");
+            wrapper.style.display = "block";
+            const toggleMenuItems = document.querySelector(".toggleMenuItems");
+            toggleMenuItems.style.display = "none";
+        }
+    </script>
+</body>
+</html>

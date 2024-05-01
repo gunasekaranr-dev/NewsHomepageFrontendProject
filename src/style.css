@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px 0 20px;
+}
+.logo h1{
+    font-size: 7rem;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: serif;
+}
+ul > li{
+    list-style: none !important;
+    display: inline;
+    margin: 0 30px 0 30px;
+    font-size: 1.2rem;
+    color: #7a7a7a;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+
+
+.middle{
+    margin: 20px 40px 0 40px;
+    display: flex;
+}
+.left{
+    width: 70%;
+    margin: 0 10px 0 0;
+}
+.right{
+    width: 30%;
+}
+.heroImage img{
+    background-color: red;
+    width: 70%;
+}
+.herocontent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.childLeft h1{
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.childRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.childRight .top p{
+    font-size: 1.75rem;
+    font-family: sans-serif;
+    color: #7a7a7a;
+    max-width: 80%;
+}
+.childRight .actionbtn button{
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    background-color: #f25c4f;
+    color: #fff;
+    padding: 14px 20px;
+    border: none;
+    letter-spacing: .25rem;
+    cursor: pointer;
+}
+.right{
+    background-color: #00001a;
+}
+.heroHeading, .boxes{
+    padding: 20px;
+}
+.boxes{
+    display: flex;
+    flex-direction: column;
+}
+.heroHeading h2{
+    color: #e5a851;
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+.rightBox1{
+    border-bottom: 1px solid #fff;
+    padding: 30px 0 30px 0;
+    height: 150px;
+    width: auto;
+}
+.boxHeading,.boxContent{
+    margin: 0px 0 30px 0px;
+}
+.boxHeading{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+.boxContent{
+    color: #7a7a7a;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 40px 20px 40px;
+}
+#box1, #box2, #box3{
+    width: 33.3%;
+    display: flex;
+    justify-content: space-around;
+}
+#box1 .boxImage img, #box2 .boxImage img, #box3 .boxImage img{
+    width: 150px;
+    height: 150px;
+}
+#box1 .boxDetails, #box2 .boxDetails, #box3 .boxDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#box1 .boxHeading h3, #box2 .boxHeading h3, #box3 .boxHeading h3{
+    color: #7a7a7a;
+}
+#box1 .boxContent, #box2 .boxContent, #box3 .boxContent{
+    margin: -50px 0 0 0;
+}
+#box1 .boxContent h5, #box2 .boxContent h5, #box3 .boxContent h5{
+    color: #000;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.menuIcon{
+    display: none;
+    padding: 20px;
+    cursor: pointer;
+}
+.toggleMenuItems{
+    display: none;
+    height: 100vh;
+}
+.toggleMenuItems .closeIcon{
+    font-size: 3rem;
+    text-align: end;
+    padding: 50px 60px 10px 10px;
+    height: 8%;
+    cursor: pointer;
+}
+.toggleMenuItems ul{
+    height: 92%;
+}
+.toggleMenuItems ul > li{
+    list-style: none !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #7a7a7a;
+    font-family: sans-serif;
+    font-size: 3rem;
+    padding: 60px 0 30px 0;
+}
+@media all and (width <= 768px){
+    .menuIcon{
+        display: block;
+        font-size: 3rem;
+    }
+    .menus{
+        display: none;
+    }
+    .middle,.herocontent{
+        display: flex;
+        flex-direction: column;
+    }
+    .left,.right,#box1,#box2,#box3{
+        width: 100%;
+    }
+    .heroImage img{
+        width: 100%;
+    }
+    .top p{
+        line-height: 50px;
+    }
+    .childRight,.actionbtn,.right{
+        margin-top: 60px;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    #box1 .boxDetails, #box2 .boxDetails, #box3 .boxDetails{
+        width: 100%;
+        margin: 0 0 0 60px;
+    }
+    #box1 .boxContent h5, #box2 .boxContent h5, #box3 .boxContent h5{
+        font-size: 1.75rem;
+    }
+}
+@media all and (width <= 425px){
+    i{
+        font-size: 2rem;
+    }
+    .logo h1, .childLeft h1{
+        font-size: 3rem;
+    }
+    .childRight .top p{
+        font-size: 1rem;
+        line-height: 30px;
+    }
+    .childRight .actionbtn button{
+        font-size: .75rem;
+    }
+    .right .heroHeading{
+        padding: 0px;
+        margin: 20px 0px 0px 20px;
+    }
+    .right .heroHeading h2{
+        font-size: 2rem;
+    }
+    .right .boxes .rightBox1 .boxHeading{
+        font-size: 1.25rem;
+    }
+    .right .boxes .rightBox1 .boxContent{
+        font-size: 1rem;
+    }
+    .rightBox1{
+        border-bottom: 1px solid #fff;
+        padding: 30px 0 30px 0;
+        height: 180px;
+        width: auto;
+    }
+    #box1 .boxImage img, #box2 .boxImage img, #box3 .boxImage img{
+        width: 100px;
+        height: 100px;
+    }
+    .boxHeading h3{
+        font-size: 1rem;
+        margin-top: -10px;
+    }
+    #box1 .boxContent h5, #box2 .boxContent h5, #box3 .boxContent h5{
+        font-size: 1rem;
+        margin: 10px 0 0px 0;
+    }
+    .boxContent p{
+        font-size: .75rem;
+    }
+}
+@media all and (width <= 320px){
+    .boxDetails{
+        margin: 0px;
+    }
+    #box1 .boxContent h5, #box2 .boxContent h5, #box3 .boxContent h5{
+        margin: 0px;
+    }
+    .boxHeading h3{
+        font-size: .8rem;
+        margin-top: 0px;
+    }
+    #box1 .boxContent h5, #box2 .boxContent h5, #box3 .boxContent h5{
+        font-size: .6rem;
+        margin-top: 30px;
+    }
+    .boxContent p{
+        font-size: .5rem;
+    }
+}
