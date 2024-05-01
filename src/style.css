@@ -25,7 +25,9 @@ ul > li{
     font-family: sans-serif;
     cursor: pointer;
 }
-
+ul li:hover{
+    color: #636363;
+}
 
 
 .middle{
